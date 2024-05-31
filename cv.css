@@ -1,0 +1,213 @@
+/* cv.css */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    vertical-align:top;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #007bff;
+    margin-right: 20px;
+}
+
+.profile-pic photos {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .name-title {
+    text-align: center;
+    flex-grow: 1;
+} */
+
+/* .name-title h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #007bff;
+} */
+
+.main-content {
+    display: flex;
+}
+
+.left-column {
+    width: 30%;
+    padding-right: 20px;
+}
+
+.right-column {
+    width: 70%;
+}
+
+.contacts,
+.education,
+.skills,
+.profile-summary,
+.work-experience,
+.language,
+.hobbies {
+    margin-bottom: 20px;
+}
+
+.contacts h3,
+.education h3,
+.skills h3,
+.profile-summary h3,
+.work-experience h3,
+.language h3,
+.hobbies h3 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.contacts p,
+.education p,
+.skills ul,
+.profile-summary p,
+.work-experience .job,
+.language p,
+.hobbies p {
+    margin: 0 0 10px;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li {
+    position: relative;
+    background: #f4f4f4;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+.skill-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #007bff;
+    border-radius: 3px;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.work-experience .job h4 {
+    margin: 0;
+    color: #007bff;
+}
+
+.work-experience .job p {
+    margin: 0 0 5px;
+}
+
+button.toggle-section {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+button.toggle-section:hover {
+    background-color: #0056b3;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.container-header p{
+    font-size: 60px;
+    margin-top: 50%;
+}
+
+.cv-container{
+align-items: flex-end;
+justify-content: right;
+width: 20%;
+border: 5px solid black;
+border-bottom: none;
+border-top: none;
+border-left: none;
+}
+
+
+.cv-container h1{
+    font-size: 60px;
+    margin-top: 50%;
+}
+
+.name-container{
+    align-items: flex-end;
+    justify-content: left;
+    width: 50%;
+}
+    
+.name-container h1{
+        font-size: 60px;
+        margin-top: 10%;
+        text-align: left;
+
+ }
+
+ .name-container p{
+    font-size: 20px;
+    margin-top: 0%;
+    text-align: left;
+ }
+
+ .contacts i{
+    vertical-align: middle;
+ }
+ .contacts div{
+    display: flex;
+ }
+
+@media (max-width: 768px) {
+    .contacts .Email {
+        font-size: 10px;
+    }
+    .cv-container h1{
+        font-size: 20px;
+    }
+    .name-container h1{
+        font-size: 20px;    
+
+ }
+    
+}
